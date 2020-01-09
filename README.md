@@ -18,19 +18,19 @@ eb open (browse website)
 
 .ebextensions/nodecommand.config
 
-  option_settings:
+option_settings: \n
   
-    aws:elasticbeanstalk:container:nodejs:
+aws:elasticbeanstalk:container:nodejs: \n
     
-      NodeCommand: "npm start"
+NodeCommand: "npm start"
 
 .ebextensions/staticfiles.config
 
-  option_settings:
+option_settings: \n
   
-    aws:elasticbeanstalk:container:nodejs:staticfiles:
+aws:elasticbeanstalk:container:nodejs:staticfiles: \n
     
-      /public: /public
+/public: /public
 
 git add. -> git commit -> eb deploy
 
