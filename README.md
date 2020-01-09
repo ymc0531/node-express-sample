@@ -20,9 +20,9 @@ eb open (browse website)
 
 .ebextensions/nodecommand.config
 
-option_settings: \n
+option_settings: 
   
-aws:elasticbeanstalk:container:nodejs: \n
+aws:elasticbeanstalk:container:nodejs: 
     
 NodeCommand: "npm start"
 
@@ -32,9 +32,9 @@ NodeCommand: "npm start"
 
 .ebextensions/staticfiles.config
 
-option_settings: \n
+option_settings: 
   
-aws:elasticbeanstalk:container:nodejs:staticfiles: \n
+aws:elasticbeanstalk:container:nodejs:staticfiles: 
     
 /public: /public
 
