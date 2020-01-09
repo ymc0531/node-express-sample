@@ -17,13 +17,19 @@ eb use EXSITNG-ENV-NAME
 eb open (browse website)
 
 .ebextensions/nodecommand.config
+
   option_settings:
+  
     aws:elasticbeanstalk:container:nodejs:
+    
       NodeCommand: "npm start"
 
 .ebextensions/staticfiles.config
+
   option_settings:
+  
     aws:elasticbeanstalk:container:nodejs:staticfiles:
+    
       /public: /public
 
 git add. -> git commit -> eb deploy
